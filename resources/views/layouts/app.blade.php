@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/property-cards.css') }}" />
     <title>@yield('title', 'Property — Real Estate Laravel App')</title>
 </head>
 <body>

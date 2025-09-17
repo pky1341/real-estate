@@ -1,0 +1,294 @@
+/* Modern Property Cards - Perfect Aspect Ratios & Design */
+
+/* Base Property Card */
+.property-item {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+
+.property-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Container - Fixed Aspect Ratio 4:3 */
+.property-item .img {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.property-item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.property-item:hover .img img {
+    transform: scale(1.08);
+}
+
+/* Status Badges */
+.property-item .badge {
+    position: absolute;
+    top: 16px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.property-item .badge.bg-success {
+    background: rgba(34, 197, 94, 0.9);
+    color: white;
+    left: 16px;
+}
+
+.property-item .badge.bg-warning {
+    background: rgba(251, 191, 36, 0.9);
+    color: #92400e;
+    right: 16px;
+}
+
+.property-item .badge.bg-danger {
+    background: rgba(239, 68, 68, 0.9);
+    color: white;
+    left: 16px;
+}
+
+/* Property Content */
+.property-content {
+    padding: 24px;
+    background: white;
+}
+
+/* Price Styling */
+.property-content .price {
+    margin-bottom: 16px;
+}
+
+.property-content .price span {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* Address & Location */
+.property-content .text-black-50 {
+    color: #64748b !important;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+.property-content .city {
+    color: #334155 !important;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Property Specifications */
+.specs {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border-top: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.specs span {
+    display: flex;
+    align-items: center;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.specs i {
+    margin-right: 8px;
+    color: #667eea;
+    font-size: 16px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Action Buttons */
+.property-content .btn {
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-content .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 14px rgba(102, 126, 234, 0.3);
+}
+
+.property-content .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.property-content .btn-outline-primary {
+    border: 2px solid #667eea;
+    color: #667eea;
+    background: transparent;
+}
+
+.property-content .btn-outline-primary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Button Container */
+.property-content .d-flex.gap-2 {
+    gap: 12px;
+}
+
+/* Homepage Slider Adjustments */
+.property-slider .property-item .img {
+    height: 220px;
+}
+
+.property-slider .property-item {
+    margin-bottom: 0;
+}
+
+/* Property Details Page */
+.property-single-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .specs {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .property-item .img {
+        height: 220px;
+    }
+    
+    .property-content {
+        padding: 20px;
+    }
+    
+    .property-content .price span {
+        font-size: 24px;
+    }
+    
+    .specs {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .property-single-item img {
+        height: 300px;
+    }
+    
+    .property-content .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .property-item .img {
+        height: 200px;
+    }
+    
+    .property-content {
+        padding: 16px;
+    }
+    
+    .specs {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .property-content .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .property-content .btn {
+        width: 100%;
+    }
+}
+
+/* Loading State */
+.property-item.loading .img {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Currency Formatting */
+.price span::before {
+    content: "₹";
+    margin-right: 2px;
+}
+
+/* Enhanced Visual Effects */
+.property-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.02) 0%, rgba(118, 75, 162, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.property-item:hover::before {
+    opacity: 1;
+}
