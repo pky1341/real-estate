@@ -31,24 +31,24 @@
                 <div class="site-navigation">
                     <a href="{{ route('home') }}" class="logo m-0 float-start">Property</a>
                     <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-                        <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
+                        <li class="{{ request()->is('/') ? 'active' : '' }}">
                             <a href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="has-children {{ request()->routeIs('properties*') ? 'active' : '' }}">
-                            <a href="{{ route('properties') }}">Properties</a>
+                        <li class="has-children {{ request()->is('properties') ? 'active' : '' }}">
+                            <a href="{{ route('page.show', 'properties') }}">Properties</a>
                             <ul class="dropdown">
                                 <li><a href="#">Buy Property</a></li>
                                 <li><a href="#">Sell Property</a></li>
                             </ul>
                         </li>
-                        <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
-                            <a href="{{ route('services') }}">Services</a>
+                        <li class="{{ request()->is('services') ? 'active' : '' }}">
+                            <a href="{{ route('page.show', 'services') }}">Services</a>
                         </li>
-                        <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
-                            <a href="{{ route('about') }}">About</a>
+                        <li class="{{ request()->is('about') ? 'active' : '' }}">
+                            <a href="{{ route('page.show', 'about') }}">About</a>
                         </li>
-                        <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                            <a href="{{ route('contact') }}">Contact Us</a>
+                        <li class="{{ request()->is('contact') ? 'active' : '' }}">
+                            <a href="{{ route('page.show', 'contact') }}">Contact Us</a>
                         </li>
                     </ul>
                     <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none">

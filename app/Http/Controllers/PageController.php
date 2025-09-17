@@ -2,32 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PageController extends Controller
 {
-    public function home()
+    public function show($page)
     {
-        return view('home');
-    }
-
-    public function properties()
-    {
-        return view('properties');
-    }
-
-    public function about()
-    {
-        return view('about');
-    }
-
-    public function services()
-    {
-        return view('services');
-    }
-
-    public function contact()
-    {
-        return view('contact');
+        $allowedPages = ['home', 'properties', 'about', 'services', 'contact'];
+        
+        if (!in_array($page, $allowedPages)) {
+            abort(404);
+        }
+        
+        return view($page);
     }
 }

@@ -30,7 +30,7 @@
                 <h2 class="font-weight-bold text-primary heading">Popular Properties</h2>
             </div>
             <div class="col-lg-6 text-lg-end">
-                <p><a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">View all properties</a></p>
+                <p><a href="{{ route('page.show', 'properties') }}" class="btn btn-primary text-white py-3 px-4">View all properties</a></p>
             </div>
         </div>
         <div class="row">
