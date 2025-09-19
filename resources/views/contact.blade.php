@@ -27,25 +27,25 @@
                     <div class="address mt-2">
                         <i class="icon-room"></i>
                         <h4 class="mb-2">Location:</h4>
-                        <p>43 Raymouth Rd. Baltemoer,<br />London 3910</p>
+                        <p>123 Premium Plaza, Business District,<br />New York, NY 10001</p>
                     </div>
 
                     <div class="open-hours mt-4">
                         <i class="icon-clock-o"></i>
-                        <h4 class="mb-2">Open Hours:</h4>
-                        <p>Sunday-Friday:<br />11:00 AM - 2300 PM</p>
+                        <h4 class="mb-2">Office Hours:</h4>
+                        <p>Monday-Friday: 9:00 AM - 7:00 PM<br />Saturday: 10:00 AM - 5:00 PM<br />Sunday: By Appointment</p>
                     </div>
 
                     <div class="email mt-4">
                         <i class="icon-envelope"></i>
                         <h4 class="mb-2">Email:</h4>
-                        <p>info@Untree.co</p>
+                        <p>info@dooparspace.com</p>
                     </div>
 
                     <div class="phone mt-4">
                         <i class="icon-phone"></i>
                         <h4 class="mb-2">Call:</h4>
-                        <p>+1 1234 55488 55</p>
+                        <p>+1 (555) 123-4567</p>
                     </div>
                 </div>
             </div>

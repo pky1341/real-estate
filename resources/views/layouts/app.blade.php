@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/property-cards.css') }}" />
-    <title>@yield('title', 'Property — Real Estate Laravel App')</title>
+    <link rel="stylesheet" href="{{ asset('css/property-layout.css') }}" />
+    <title>@yield('title', 'DooparSpace — Premium Real Estate')</title>
 </head>
 <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -29,16 +29,19 @@
         <div class="container">
             <div class="menu-bg-wrap">
                 <div class="site-navigation">
-                    <a href="{{ route('home') }}" class="logo m-0 float-start">Property</a>
+                    <a href="{{ route('home') }}" class="logo m-0 float-start d-flex align-items-center">
+                        <img src="{{ asset('images/logo/1758027633.png') }}" alt="DooparSpace" class="logo-img">
+                    </a>
                     <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
                         <li class="{{ request()->is('/') ? 'active' : '' }}">
                             <a href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="has-children {{ request()->is('properties') ? 'active' : '' }}">
-                            <a href="{{ route('page.show', 'properties') }}">Properties</a>
+                        <li class="has-children {{ request()->is('properties*') ? 'active' : '' }}">
+                            <a href="{{ route('properties') }}">Properties</a>
                             <ul class="dropdown">
-                                <li><a href="#">Buy Property</a></li>
-                                <li><a href="#">Sell Property</a></li>
+                                <li><a href="{{ route('properties') }}">All Properties</a></li>
+                                <li><a href="{{ route('properties', ['type' => 1]) }}">Houses</a></li>
+                                <li><a href="{{ route('properties', ['type' => 2]) }}">Apartments</a></li>
                             </ul>
                         </li>
                         <li class="{{ request()->is('services') ? 'active' : '' }}">
@@ -66,22 +69,22 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="widget">
-                        <h3>Contact</h3>
-                        <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                        <h3>Contact DooparSpace</h3>
+                        <address>123 Premium Plaza, Business District<br>New York, NY 10001</address>
                         <ul class="list-unstyled links">
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                            <li><a href="tel://15551234567">+1 (555) 123-4567</a></li>
+                            <li><a href="mailto:info@dooparspace.com">info@dooparspace.com</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="widget">
-                        <h3>Sources</h3>
+                        <h3>Quick Links</h3>
                         <ul class="list-unstyled float-start links">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
+                            <li><a href="{{ route('properties') }}">Browse Properties</a></li>
+                            <li><a href="{{ route('page.show', 'services') }}">Our Services</a></li>
+                            <li><a href="{{ route('page.show', 'about') }}">About Us</a></li>
+                            <li><a href="{{ route('page.show', 'contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

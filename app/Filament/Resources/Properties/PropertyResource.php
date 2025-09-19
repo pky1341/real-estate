@@ -82,7 +82,8 @@ class PropertyResource extends Resource
                     
                 Section::make('Property Features')
                     ->schema([
-                        TextInput::make('bedrooms')
+                        TextInput::make('cabins')
+                            ->label('Cabins')
                             ->required()
                             ->numeric()
                             ->minValue(1),
@@ -93,9 +94,20 @@ class PropertyResource extends Resource
                             ->minValue(1),
                             
                         TextInput::make('area')
+                            ->label('Area')
                             ->required()
                             ->numeric()
+                            ->minValue(1)
                             ->suffix('sq ft'),
+                            
+                        Select::make('work_station')
+                            ->label('Work Station')
+                            ->options([
+                                'Modular' => 'Modular',
+                                'Normal' => 'Normal',
+                            ])
+                            ->default('Normal')
+                            ->required(),
                             
                         Select::make('status')
                             ->options([
@@ -167,8 +179,8 @@ class PropertyResource extends Resource
                 TextColumn::make('propertyType.name')
                     ->label('Type'),
                     
-                TextColumn::make('bedrooms')
-                    ->suffix(' beds'),
+                TextColumn::make('cabins')
+                    ->suffix(' cabins'),
                     
                 TextColumn::make('status')
                     ->badge()

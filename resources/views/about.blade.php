@@ -26,13 +26,13 @@
                 <h2 class="font-weight-bold heading text-primary mb-4">About Us</h2>
             </div>
             <div class="col-lg-6">
-                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim pariatur similique debitis vel nisi qui reprehenderit totam? Quod maiores.</p>
-                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni saepe, explicabo nihil. Est, autem error cumque ipsum repellendus veniam sed blanditiis unde ullam maxime veritatis perferendis cupiditate, at non esse!</p>
-                <p class="text-black-50">Enim, nisi labore exercitationem facere cupiditate nobis quod autem veritatis quis minima expedita. Cumque odio illo iusto reiciendis, labore impedit omnis, nihil aut atque, facilis necessitatibus asperiores porro qui nam.</p>
+                <p class="text-black-50">DooparSpace is a premier real estate company dedicated to connecting clients with their perfect properties. With over a decade of experience in the market, we specialize in luxury residential and commercial real estate across prime locations.</p>
+                <p class="text-black-50">Our team of certified property consultants brings deep market knowledge and personalized service to every transaction. We understand that buying or selling property is one of life's most significant decisions, which is why we're committed to making the process seamless and rewarding.</p>
+                <p class="text-black-50">From first-time homebuyers to seasoned investors, we provide comprehensive real estate solutions including property management, market analysis, and investment consulting to help our clients achieve their real estate goals.</p>
             </div>
             <div class="col-lg-6">
-                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni saepe, explicabo nihil. Est, autem error cumque ipsum repellendus veniam sed blanditiis unde ullam maxime veritatis perferendis cupiditate, at non esse!</p>
-                <p class="text-black-50">Enim, nisi labore exercitationem facere cupiditate nobis quod autem veritatis quis minima expedita. Cumque odio illo iusto reiciendis, labore impedit omnis, nihil aut atque, facilis necessitatibus asperiores porro qui nam.</p>
+                <p class="text-black-50">We pride ourselves on maintaining the highest standards of professionalism and integrity in all our dealings. Our extensive portfolio includes luxury homes, investment properties, commercial spaces, and exclusive developments in the most sought-after neighborhoods.</p>
+                <p class="text-black-50">At DooparSpace, we leverage cutting-edge technology and market insights to provide our clients with accurate valuations, comprehensive property reports, and strategic investment advice that maximizes returns and minimizes risks.</p>
             </div>
         </div>
     </div>
@@ -52,8 +52,8 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Quality properties</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Premium Properties</h3>
+                        <p class="text-black-50">Curated selection of luxury homes and investment properties in prime locations with verified documentation.</p>
                     </div>
                 </div>
 
@@ -62,8 +62,8 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Top rated agents</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Expert Consultants</h3>
+                        <p class="text-black-50">Certified real estate professionals with deep market knowledge and proven track records.</p>
                     </div>
                 </div>
 
@@ -72,8 +72,8 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Easy and safe</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Secure Transactions</h3>
+                        <p class="text-black-50">Transparent processes with legal compliance and comprehensive property verification.</p>
                     </div>
                 </div>
             </div>
@@ -95,8 +95,8 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Quality properties</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Market Analysis</h3>
+                        <p class="text-black-50">Comprehensive market research and property valuations using advanced analytics and local expertise.</p>
                     </div>
                 </div>
 
@@ -105,8 +105,8 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Top rated agents</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Personalized Service</h3>
+                        <p class="text-black-50">Tailored real estate solutions that match your lifestyle, budget, and investment objectives.</p>
                     </div>
                 </div>
 
@@ -115,8 +115,8 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Easy and safe</h3>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
+                        <h3 class="heading">Legal Compliance</h3>
+                        <p class="text-black-50">Full legal support and documentation review to ensure smooth and compliant transactions.</p>
                     </div>
                 </div>
             </div>
@@ -189,8 +189,8 @@
                     <div class="testimonial">
                         <img src="{{ asset('images/person_1-min.jpg') }}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
                         <h3 class="h5 text-primary">James Smith</h3>
-                        <p class="text-black-50">Designer, Co-founder</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p class="text-black-50">Senior Property Consultant</p>
+                        <p>With over 15 years in luxury real estate, James specializes in high-end residential properties and commercial investments. His expertise in market analysis and negotiation has helped clients secure premium properties worth over $500M.</p>
                         <ul class="social list-unstyled list-inline dark-hover">
                             <li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -204,8 +204,8 @@
                     <div class="testimonial">
                         <img src="{{ asset('images/person_2-min.jpg') }}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
                         <h3 class="h5 text-primary">Carol Houston</h3>
-                        <p class="text-black-50">Designer, Co-founder</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p class="text-black-50">Investment Specialist</p>
+                        <p>Carol brings 12 years of experience in real estate investment and portfolio management. She helps clients build wealth through strategic property acquisitions and has a proven track record in identifying high-growth markets.</p>
                         <ul class="social list-unstyled list-inline dark-hover">
                             <li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -219,8 +219,8 @@
                     <div class="testimonial">
                         <img src="{{ asset('images/person_3-min.jpg') }}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
                         <h3 class="h5 text-primary">Synthia Cameron</h3>
-                        <p class="text-black-50">Designer, Co-founder</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p class="text-black-50">Commercial Real Estate Director</p>
+                        <p>Synthia leads our commercial division with expertise in office buildings, retail spaces, and industrial properties. Her strategic approach to commercial real estate has facilitated major corporate relocations and expansions.</p>
                         <ul class="social list-unstyled list-inline dark-hover">
                             <li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -234,8 +234,8 @@
                     <div class="testimonial">
                         <img src="{{ asset('images/person_4-min.jpg') }}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
                         <h3 class="h5 text-primary">Davin Smith</h3>
-                        <p class="text-black-50">Designer, Co-founder</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p class="text-black-50">Property Management Director</p>
+                        <p>Davin oversees our property management services, ensuring maximum returns for property owners. His comprehensive approach to maintenance, tenant relations, and market positioning has consistently delivered above-market performance.</p>
                         <ul class="social list-unstyled list-inline dark-hover">
                             <li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>

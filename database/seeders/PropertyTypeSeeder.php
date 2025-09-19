@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\PropertyType;
 
 class PropertyTypeSeeder extends Seeder
 {
@@ -12,10 +13,12 @@ class PropertyTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        $types = ['House', 'Apartment', 'Villa', 'Condo', 'Townhouse', 'Studio'];
+        $types = ['House', 'Apartment', 'Villa', 'Condo', 'Townhouse', 'Studio', 'Duplex', 'Penthouse'];
         
         foreach ($types as $type) {
-            \App\Models\PropertyType::create(['name' => $type]);
+            PropertyType::firstOrCreate(['name' => $type]);
         }
+        
+        $this->command->info('Property types seeded successfully!');
     }
 }

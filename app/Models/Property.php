@@ -13,7 +13,7 @@ class Property extends Model
     
     protected $fillable = [
         'title', 'description', 'price', 'address', 'city', 'state',
-        'bedrooms', 'bathrooms', 'area', 'property_type_id', 'status', 'featured', 'property_images'
+        'cabins', 'bathrooms', 'area', 'work_station', 'property_type_id', 'status', 'featured', 'property_images'
     ];
 
     protected $casts = [
@@ -36,7 +36,8 @@ class Property extends Model
             'address' => 'required|string|max:255',
             'city' => 'required|string|max:100',
             'state' => 'required|string|max:100',
-            'bedrooms' => 'required|integer|min:1|max:20',
+            'cabins' => 'required|integer|min:1|max:20',
+            'work_station' => 'required|in:Modular,Normal',
             'bathrooms' => 'required|integer|min:1|max:20',
             'area' => 'required|integer|min:100',
             'property_type_id' => 'required|exists:property_types,id',
@@ -86,9 +87,8 @@ class Property extends Model
     
     private function isValidImagePath(string $path): bool
     {
-        // Security: Prevent path traversal
-        return !str_contains($path, '..') && 
-               preg_match('/^[a-zA-Z0-9/_.-]+\.(jpg|jpeg|png|webp)$/i', $path);
+    return !str_contains($path, '..') && 
+            preg_match('#^[a-zA-Z0-9/_\.-]+\.(jpg|jpeg|png|webp)$#i', $path);
     }
     
     public function getAllImagesAttribute()
